@@ -1,0 +1,80 @@
+#other-projects{
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#other-projects-wrapper{
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#other-project-div{
+    background-color: #F3F3F3;
+    height: 28rem;
+    width: 28rem;
+    padding: 2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition-duration: 0.2s;
+}
+
+#other-project-div:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    transform: translateY(-0.8rem);
+    -webkit-transform: translateY(-0.8rem);
+    -moz-transform: translateY(-0.8rem);
+    -ms-transform: translateY(-0.8rem);
+    -o-transform: translateY(-0.8rem);
+}
+
+#other-project-icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+#other-project-icon img{
+    width: 2rem;
+}
+
+#other-project-icon div{
+    display: flex;
+    gap: 1.5rem;
+}
+
+#other-project-div h2{
+    color: var(--clr-text-dark);
+    font-size: 3rem;
+    padding: 2rem 0;
+    font-family: "roboto-bold", sans-serif;
+}
+
+#other-project-div p{
+    color: var(--clr-primary);
+    font-size: 1.5rem;
+    font-family: "roboto", sans-serif;
+}
+
+/* Media Queries */
+@media only screen and  (max-width: 500px) {
+    #other-project-div{
+        height: 38rem;
+        width: 38rem;
+    }
+
+    #other-project-div h2{
+        font-size: 4.5rem;
+    }
+
+    #other-project-div p{
+        font-size: 2.2rem;
+    }
+}
+

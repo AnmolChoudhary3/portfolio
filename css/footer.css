@@ -1,0 +1,109 @@
+footer{
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    position: sticky;
+    bottom: 0;
+    z-index: -2;
+    width: 100vw;
+}
+
+
+footer h1{
+    font-family: "roboto-bold", sans-serif;
+    font-size: 4.5em;
+}
+
+@keyframes typing {
+    from{
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -o-transform: scaleX(1);
+}
+
+    to{
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        -o-transform: scaleX(0);
+}
+}
+
+footer p{
+    margin-top: 2rem;
+    font-family: "roboto", sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 0.1rem;
+    position: relative;
+    
+}
+
+footer p::before{
+    content: " ";
+    /* box-sizing: content-box;
+    border-left: 1rem solid white; */
+    position: absolute;
+    inset: 0;
+    background: var(--clr-primary);
+    animation-name: typing;
+    animation-duration: 2s;
+    transform-origin: right;
+    animation-iteration-count:infinite ;
+    animation-direction: alternate ;
+    animation-timing-function: cubic-bezier(0.35, 0, 0, 1);
+    
+}
+
+
+footer h2{
+    margin-bottom: 1.5rem;
+    font-size: 2re;
+    font-family: "roboto-bold", sans-serif;
+}
+
+footer img{
+    height: 3rem;
+}
+
+#line{
+    height: 0.2rem;
+    width: 30rem;
+    background: white;
+    margin: 3rem;
+  }
+
+#profiles{
+    display: flex;
+    gap: 3rem 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    gap: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+footer h4{
+    /* letter-spacing: 0.2rem; */
+    font-size: 1.3em;
+    margin-top: 4rem;
+    font-family: 'Courier New', Courier, monospace
+}
+
+@media only screen and  (max-width: 500px) {
+    footer{
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,188 @@
+@import './css/hero.css';
+@import './css/skills.css';
+@import './css/project.css';
+@import './css/otherProject.css';
+@import './css/footer.css';
+@import './css/hobby.css';
+
+*::before, 
+*::after, 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    /* outline: 1px solid black; */
+    
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--clr-accent);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+
+@import 'https://rsms.me/inter/inter.css';
+
+@font-face {
+    font-family: "Inter";
+    src: url(./Assets/Fonts/INTER-BLACK.TTF);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(./Assets/Fonts/Roboto-Regular-webfont.woff);
+}
+@font-face {
+    font-family: "roboto-bold";
+    src: url(./Assets/Fonts/Roboto-Bold-webfont.woff);
+}
+@font-face {
+    font-family: "roboto-light";
+    src: url(./Assets/Fonts/Roboto-Light-webfont.woff);
+}
+
+:root{
+    /* font-size: 10px; */
+    font-size: clamp(0.8vw, 10px, 1vw);
+}
+body{
+    --clr-primary: #0F141E;
+    --clr-accent: #F23F52;
+    --clr-text: #878A8F;
+    --clr-text-dark: #454545;
+    --clr-white: #fff;
+    font-family: "roboto", sans-serif;
+    color: var(--clr-primary);
+    position: relative;
+    isolation: isolate;
+    overflow-x: hidden;
+    cursor: url(./Assets/cursor.png),auto;
+}
+
+.body-wrapper{
+    padding: 0 7.5vw 10vh 7.5vw;
+    border-bottom-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+    background-color: var(--clr-white);
+    overflow-x: hidden;
+    isolation: isolate;
+    z-index: 1;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 20px 60px -12px, rgba(255, 255, 255, 0.249) 0px 18px 36px -18px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    margin-bottom: 5vh;
+}
+
+header img{
+    height: 6rem;
+}
+
+.section-heading{
+    font-family: "roboto-bold";
+    letter-spacing: -0.05ch;
+    font-size: 6rem;
+    margin-bottom: 4rem;
+}
+
+/* Media Queries */
+@media only screen and  (max-width: 500px) {
+    .section-heading{
+        font-size: 10rem;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+html:hover .cursor {
+    opacity: 1;
+}
+
+.cursor {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 999;
+width: 50px;
+height: 50px;
+margin: -25px 0 0 -25px;
+opacity: 0;
+transition: opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+pointer-events: none;
+}
+.cursor--hover .cursor-inner {
+transform: scale(0.5);
+opacity: 0;
+}
+.cursor--hover .cursor-outer {
+transform: scale(1.4);
+border-color: var(--clr-primary);
+opacity: 1;
+}
+
+.cursor-move-inner {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 6px;
+height: 6px;
+margin-top: -3px;
+margin-left: -3px;
+}
+
+.cursor-move-outer {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.cursor-inner {
+display: block;
+width: 100%;
+height: 100%;
+background: var(--clr-primary);
+border-radius: 50%;
+transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.cursor-outer {
+display: block;
+width: 100%;
+height: 100%;
+border: 1px solid var(--clr-text-dark);
+border-radius: 50%;
+box-sizing: border-box;
+transition: border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
