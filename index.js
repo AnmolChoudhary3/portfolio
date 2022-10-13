@@ -3,7 +3,7 @@ const projectData = [
         id: 1,
         heading: 'ShapeIt',
         desc: 'Scalable and practical shape recognition Web app game made using React and Flask. Uses an ANN deep learning model to recognise shapes with over 90% accuracy',
-        img: './Assets/shapeit.png',
+        img: './Assets/shapeit.webp',
         link: 'https://github.com/AnmolChoudhary3/shape-it',
         github: 'https://github.com/AnmolChoudhary3/shape-it',
         techStack: 'React | Flask | Machine Learning',
@@ -12,7 +12,7 @@ const projectData = [
         id: 2,
         heading: 'Momentum 2021',
         desc: 'Website themed on Arabian Nights implemented using React & Firebase, to facilitate registrations, publicity and payments. Gathered Data of over 1100 students and successfully completed 200 registrations with payment.',
-        img: './Assets/momentum.png',
+        img: './Assets/momentum.webp',
         link: 'https://momentum.ncuindia.edu/',
         github: '',
         techStack: 'React | Firebase',
@@ -21,7 +21,7 @@ const projectData = [
         id: 3,
         heading: 'URL Shortener',
         desc: 'Generates a short and shareable link that redirects to the original site, implemented using React and Firebase. Maps a URL to an alpha-numeric code (9 characters), effectively reducing the length of any URL to 28 characters.',
-        img: './Assets/urlshortener.png',
+        img: './Assets/urlshortener.webp',
         link: 'https://urls-94c0f.web.app/',
         github: 'https://github.com/AnmolChoudhary3/url-shortner',
         techStack: 'React | Firebase',
@@ -81,8 +81,8 @@ const getProjectHTML = (data, i) => {
                 <p>${data?.desc}</p>
                 <h3>${data?.techStack}</h3>
                 <div class="project-links">
-                    <a href=${data?.github} target="_blank"><img src="./Assets/github.png" alt=""></a>
-                    <a href=${data?.link} target="_blank"><img src="./Assets/redirect.png" alt=""></a>
+                    <a href=${data?.github} target="_blank" aria-label="Github"><img src="./Assets/github.png" alt=""></a>
+                    <a href=${data?.link} target="_blank" aria-label="redirect"><img src="./Assets/redirect.png" alt=""></a>
                 </div>
             </div>
             <img src=${data?.img} alt="" class = "${i%2?"left-child":"right-child"}">
@@ -97,8 +97,8 @@ const getOtherProjectHTML = (data, i) => {
         <div id="other-project-icon">
           <img src="./Assets/folder.png" alt="folder">
           <div>
-            <a href=${data?.github} target="_blank"><img src="./Assets/github.png" alt="github"></a>
-            <a href=${data?.link} target="_blank"><img src="./Assets/redirect.png" alt="redirect"></a>
+            <a href=${data?.github} target="_blank" aria-label="Github"><img src="./Assets/github.png" alt="github"></a>
+            <a href=${data?.link} target="_blank" aria-label="redirect"><img src="./Assets/redirect.png" alt="redirect"></a>
           </div>
         </div>
         <h2>${data?.heading}</h2>
