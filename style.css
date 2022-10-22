@@ -68,6 +68,11 @@ a{
     /* font-size: 10px; */
     font-size: clamp(0.8vw, 10px, 1vw);
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     --clr-primary: #0F141E;
     --clr-accent: #F23F52;
@@ -105,6 +110,23 @@ header img{
     height: 6rem;
 }
 
+header nav ul{
+     list-style: none;
+     display: flex;
+     gap: 3rem;
+     font-family: "roboto", "sans-serif";
+     font-size: 1.6rem;
+}
+
+header nav ul li:hover{
+    font-family: "roboto-bold", "sans-serif";
+}
+    
+header nav ul li{
+    letter-spacing: 0.1ch;
+        
+}
+
 .section-heading{
     font-family: "roboto-bold", "sans-serif";
     letter-spacing: -0.05ch;
@@ -113,6 +135,11 @@ header img{
 }
 
 /* Media Queries */
+@media only screen and  (max-width: 1000px) {
+    header nav ul{
+        display: none;
+    }
+}
 @media only screen and  (max-width: 500px) {
     .section-heading{
         font-size: 10rem;
@@ -121,6 +148,7 @@ header img{
         text-align: center;
     }
 }
+
 
 html:hover .cursor {
     opacity: 1;
