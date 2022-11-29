@@ -13,7 +13,7 @@ const projectData = [
         heading: 'Momentum 2021',
         desc: 'Website themed on Arabian Nights implemented using React & Firebase, to facilitate registrations, publicity and payments. Gathered Data of over 1100 students and successfully completed 200 registrations with payment.',
         img: './Assets/momentum.webp',
-        link: 'https://momentum.ncuindia.edu/',
+        link: 'https://momentum2021-d69e1.web.app/',
         github: '',
         techStack: 'React | Firebase',
     },
