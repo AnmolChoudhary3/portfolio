@@ -111,21 +111,27 @@ header img{
 }
 
 header nav ul{
-     list-style: none;
-     display: flex;
-     gap: 3rem;
-     font-family: "roboto", "sans-serif";
-     font-size: 1.6rem;
+    width: 40rem;
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    font-family: "roboto", "sans-serif";
+    font-size: 1.6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li{
+    letter-spacing: 0.1ch;
+    transition-duration: 0.3s;
+    
 }
 
 header nav ul li:hover{
+    font-size: 2rem;
     font-family: "roboto-bold", "sans-serif";
 }
     
-header nav ul li{
-    letter-spacing: 0.1ch;
-        
-}
 
 .section-heading{
     font-family: "roboto-bold", "sans-serif";
