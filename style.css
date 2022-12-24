@@ -150,9 +150,15 @@ header nav ul li:hover{
     .section-heading{
         font-size: 10rem;
     }
+
     h1{
         text-align: center;
     }
+
+    header img{
+        height: 12rem;
+    }
+    
 }
 
 
