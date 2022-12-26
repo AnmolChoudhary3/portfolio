@@ -58,6 +58,10 @@
     -o-border-radius: 0.6rem;
     cursor: pointer;
     transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
 }
 
 #hero .info button:hover{
@@ -66,10 +70,6 @@
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
 }
 
 #profile-pic{
@@ -182,7 +182,7 @@
 }
 
 
-@media only screen and  (max-width: 1000px) {
+@media only screen and  (max-width: 1024px) {
     #hero img,
     #hero #code{
         display: none;
@@ -216,6 +216,7 @@
         -moz-border-radius:1.2rem ;
         -ms-border-radius:1.2rem ;
         -o-border-radius:1.2rem ;
+}
 }
 
 @media only screen and  (max-width: 500px) {
@@ -252,9 +253,6 @@
         -ms-border-radius:1.2rem ;
         -o-border-radius:1.2rem ;
 }
-
-}
-
 
 }
 
